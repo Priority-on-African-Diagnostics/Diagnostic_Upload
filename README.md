@@ -1,7 +1,9 @@
 # Diagnostic_Upload
 Use this repository to download diagnostic code templates and upload your new diagnostics to be integrated into the hub.
 
-# For more information on LaunchPAD and the diagnostics that have been created and how they work please see: https://github.com/Priority-on-African-Diagnostics/LaunchPAD/blob/master/README.md
+# For more information on LaunchPAD and the diagnostics that have been created and how they work please see:
+
+https://github.com/Priority-on-African-Diagnostics/LaunchPAD/blob/master/README.md
 
 ## Cloning and creating diagnostics
 
@@ -11,13 +13,15 @@ Once you have set up github on your computer (https://help.github.com/en/github/
 
 If you would rather only clone one or a selection of diagnostics you can. If you take this approach you must always clone the files/CONFIG area with your diagnostics of choice. Follow the steps below that show how to pull only the new temploate New_Diag:
 
-\> git clone --filter=blob:none --no-checkout  https://github.com/Priority-on-African-Diagnostics/LaunchPAD.git
+\> git clone --filter=blob:none --no-checkout  https://github.com/Priority-on-African-Diagnostics/Diagnostic_Upload.git
 
-\> cd LaunchPAD/
+\> cd Diagnostic_Upload/
 
-\> git sparse-checkout set DIAGNOSTICS/Central_African_Easterlies/ files/CONFIG
+\> git sparse-checkout set DIAGNOSTICS/New_Diag/ files/CONFIG
 
 \> git checkout master
+
+Create a copy of the New_Diag folder with the *diagnostic* name of your choice and make edits to that folder
 
 To run diagnostics on JASMIN move to the DIAGNOSTICS/*diagnostic* of your choice and alter home_add in *diagnostic*\_config.py is described above. Load the jaspy module (> *load jaspy*) and run *diagnostic*.py. Figure will appear in the plots directory and any intermediary netcdf files will appear in intermediary_files. 
 
