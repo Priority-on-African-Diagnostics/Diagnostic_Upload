@@ -1,7 +1,7 @@
 # Diagnostic_Upload
 Use this repository to download diagnostic code templates and upload your new diagnostics to be integrated into the hub.
 
-# For more information on LaunchPAD and the diagnostics that have been created and how they work please see:
+## For more information on LaunchPAD and the diagnostics that have been created and how they work please see:
 
 https://github.com/Priority-on-African-Diagnostics/LaunchPAD/blob/master/README.md
 
@@ -26,5 +26,13 @@ Create a copy of the New_Diag folder with the *diagnostic* name of your choice a
 To run diagnostics on JASMIN move to the DIAGNOSTICS/*diagnostic* of your choice and alter home_add in *diagnostic*\_config.py is described above. Load the jaspy module (> *load jaspy*) and run *diagnostic*.py. Figure will appear in the plots directory and any intermediary netcdf files will appear in intermediary_files. 
 
 If you are not running on JASMIN you can load any conda environment that contains modules in files/CONFIG and *diagnostic*.py before running the diagnostic. 
+
+## Push your new diagnostic back to this repository
+
+git add $new diagnostic folder
+
+git commit –m “$message to describe your new changes” 
+
+git push –u origin $master 
 
 ---------
