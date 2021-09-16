@@ -14,7 +14,6 @@
 
 #OPTIONS for new diagnostic that can be changed by the user
 
-#model name list?
 obs_list = []
 
 vari_list = [] 
